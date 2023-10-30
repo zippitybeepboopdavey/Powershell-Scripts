@@ -21,7 +21,7 @@ $Email = "recipient@email.com"
 $Name = $User.DisplayName
 
  #Variable for the server name
-$emailSmtpServer = "smtp.na.valmont.com"
+$emailSmtpServer = ""
 
 #Variable for server port
 $emailSmtpServerPort = "25"
@@ -47,7 +47,7 @@ $emailMessage.Attachments.Add($att)
 
 # The standard email the end user will receive.
 $body = @"
-This is a list of users within the NA domain that have passwords expiring within the next 7 days starting from ${firstDate} and ending on ${lastDate}.
+This is a list of users within the domain that have passwords expiring within the next 7 days starting from ${firstDate} and ending on ${lastDate}.
 "@
 $emailMessage.Body = $body
  
